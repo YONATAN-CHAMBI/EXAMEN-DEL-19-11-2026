@@ -1,0 +1,653 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario TI | IES Público Juli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sistema">
+
+    <input type="radio" name="seccion" id="inicio" checked>
+    <input type="radio" name="seccion" id="equipos">
+    <input type="radio" name="seccion" id="inventario">
+    <input type="radio" name="seccion" id="reportes">
+    <input type="radio" name="seccion" id="usuarios">
+    <input type="radio" name="seccion" id="configuracion">
+
+    <aside class="sidebar">
+        <div class="marca">
+            <div class="marca-logo">TI</div>
+            <h2>INVENTARIO TI</h2>
+            <p>Control de equipos</p>
+        </div>
+
+        <p class="menu-subtitulo">MENÚ PRINCIPAL</p>
+
+        <nav class="navegacion">
+            <label for="inicio"><span>⌂</span> Inicio</label>
+            <label for="equipos"><span>▣</span> Equipos</label>
+            <label for="inventario"><span>▤</span> Inventario</label>
+            <label for="reportes"><span>▥</span> Reportes</label>
+            <label for="usuarios"><span>♙</span> Usuarios</label>
+            <label for="configuracion"><span>⚙</span> Configuración</label>
+        </nav>
+
+        <div class="sidebar-abajo">
+            <div class="usuario-lateral">
+                <div class="usuario-foto">YC</div>
+                <div>
+                    <strong>Yonatan Chambi</strong>
+                    <small>Administrador</small>
+                </div>
+            </div>
+            <p>IES Público Juli APSTI GAC · 2026</p>
+        </div>
+    </aside>
+
+    <main class="principal">
+
+        <header class="encabezado">
+            <div>
+                <p class="encabezado-etiqueta">IES PÚBLICO JULI</p>
+                <h1>Inventario de Equipos Informáticos</h1>
+                <p class="encabezado-descripcion">
+                    Registro y seguimiento de los equipos del instituto
+                </p>
+            </div>
+
+            <div class="encabezado-derecha">
+                <span class="indicador">● Proyecto académico</span>
+                <div class="avatar">YC</div>
+            </div>
+        </header>
+
+        <div class="contenido">
+
+            <section class="pagina pagina-inicio">
+                <div class="titulo-seccion">
+                    <div>
+                        <h2>Resumen del inventario</h2>
+                        <p>Estado actual de los equipos registrados</p>
+                    </div>
+                    <span class="periodo">Año 2026</span>
+                </div>
+
+                <div class="tarjetas">
+
+                    <article class="tarjeta tarjeta-total">
+                        <div class="tarjeta-superior">
+                            <span>Total de equipos</span>
+                            <div class="tarjeta-icono">▣</div>
+                        </div>
+                        <h3>120</h3>
+                        <p>Equipos del inventario</p>
+                    </article>
+
+                    <article class="tarjeta tarjeta-operativos">
+                        <div class="tarjeta-superior">
+                            <span>Equipos operativos</span>
+                            <div class="tarjeta-icono">✓</div>
+                        </div>
+                        <h3>95</h3>
+                        <p>En buen funcionamiento</p>
+                    </article>
+
+                    <article class="tarjeta tarjeta-mantenimiento">
+                        <div class="tarjeta-superior">
+                            <span>En mantenimiento</span>
+                            <div class="tarjeta-icono">⚒</div>
+                        </div>
+                        <h3>15</h3>
+                        <p>Necesitan revisión técnica</p>
+                    </article>
+
+                    <article class="tarjeta tarjeta-obsoletos">
+                        <div class="tarjeta-superior">
+                            <span>Equipos Obsoletos</span>
+                            <div class="tarjeta-icono">!</div>
+                        </div>
+                        <h3>10</h3>
+                        <p>Pendientes de renovación</p>
+                    </article>
+
+                </div>
+
+                <div class="resumen-inferior">
+
+                    <div class="panel panel-tabla">
+                        <div class="panel-encabezado">
+                            <div>
+                                <h3>Últimos equipos registrados</h3>
+                                <p>Equipos de las diferentes áreas</p>
+                            </div>
+                            <label for="inventario" class="enlace">
+                                Ver inventario
+                            </label>
+                        </div>
+
+                        <div class="tabla-contenedor">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Equipo</th>
+                                        <th>Área</th>
+                                        <th>Fecha de Ingreso</th>
+                                        <th>Estado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>EQ001</td>
+                                        <td>Computadora Dell</td>
+                                        <td>Administración</td>
+                                        <td>12/03/2026</td>
+                                        <td><span class="estado verde">Operativo</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>EQ002</td>
+                                        <td>Laptop HP</td>
+                                        <td>Contabilidad</td>
+                                        <td>15/04/2026</td>
+                                        <td><span class="estado verde">Operativo</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>EQ003</td>
+                                        <td>Impresora Epson</td>
+                                        <td>Secretaría</td>
+                                        <td>20/05/2026</td>
+                                        <td><span class="estado amarillo">Mantenimiento</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>EQ004</td>
+                                        <td>Monitor Samsung</td>
+                                        <td>Informática</td>
+                                        <td>10/06/2026</td>
+                                        <td><span class="estado verde">Operativo</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>EQ005</td>
+                                        <td>Computadora Lenovo</td>
+                                        <td>Laboratorio</td>
+                                        <td>18/02/2020</td>
+                                        <td><span class="estado morado">Obsoleto</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-resumen">
+                        <div class="panel-encabezado">
+                            <div>
+                                <h3>Estado de los equipos</h3>
+                                <p>Porcentaje según su condición</p>
+                            </div>
+                        </div>
+
+                        <div class="resumen-item">
+                            <div class="resumen-texto">
+                                <span>Operativos</span>
+                                <strong>79.17%</strong>
+                            </div>
+                            <div class="barra">
+                                <div class="barra-verde"></div>
+                            </div>
+                        </div>
+
+                        <div class="resumen-item">
+                            <div class="resumen-texto">
+                                <span>Mantenimiento</span>
+                                <strong>12.50%</strong>
+                            </div>
+                            <div class="barra">
+                                <div class="barra-amarilla"></div>
+                            </div>
+                        </div>
+
+                        <div class="resumen-item">
+                            <div class="resumen-texto">
+                                <span>Obsoletos</span>
+                                <strong>8.33%</strong>
+                            </div>
+                            <div class="barra">
+                                <div class="barra-morada"></div>
+                            </div>
+                        </div>
+
+                        <div class="resumen-nota">
+                            <strong>120 equipos</strong>
+                            <p>Total de referencia del inventario</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="pagina pagina-equipos">
+                <div class="titulo-seccion">
+                    <div>
+                        <h2>Registro de equipos</h2>
+                        <p>Equipos informáticos por área y estado</p>
+                    </div>
+                    <span class="periodo">5 equipos de muestra</span>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-encabezado">
+                        <div>
+                            <h3>Lista de equipos</h3>
+                            <p>Información básica de cada equipo</p>
+                        </div>
+                    </div>
+
+                    <div class="tabla-contenedor">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Tipo</th>
+                                    <th>Marca</th>
+                                    <th>Área</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>EQ001</td>
+                                    <td>Computadora</td>
+                                    <td>Dell</td>
+                                    <td>Administración</td>
+                                    <td><span class="estado verde">Operativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>EQ002</td>
+                                    <td>Laptop</td>
+                                    <td>HP</td>
+                                    <td>Contabilidad</td>
+                                    <td><span class="estado verde">Operativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>EQ003</td>
+                                    <td>Impresora</td>
+                                    <td>Epson</td>
+                                    <td>Secretaría</td>
+                                    <td><span class="estado amarillo">Mantenimiento</span></td>
+                                </tr>
+                                <tr>
+                                    <td>EQ004</td>
+                                    <td>Monitor</td>
+                                    <td>Samsung</td>
+                                    <td>Informática</td>
+                                    <td><span class="estado verde">Operativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>EQ005</td>
+                                    <td>Computadora</td>
+                                    <td>Lenovo</td>
+                                    <td>Laboratorio</td>
+                                    <td><span class="estado morado">Obsoleto</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-encabezado">
+                        <div>
+                            <h3>Ficha de equipo</h3>
+                            <p>Datos necesarios para registrar un equipo</p>
+                        </div>
+                        <span class="etiqueta-suave">Ejemplo</span>
+                    </div>
+
+                    <form class="formulario">
+
+                        <div class="campo">
+                            <label for="codigo-equipo">Código del equipo</label>
+                            <input type="text" id="codigo-equipo" placeholder="EQ006">
+                        </div>
+
+                        <div class="campo">
+                            <label for="nombre-equipo">Tipo de equipo</label>
+                            <input type="text" id="nombre-equipo" placeholder="Computadora, laptop, impresora...">
+                        </div>
+
+                        <div class="campo">
+                            <label for="marca-equipo">Marca</label>
+                            <input type="text" id="marca-equipo" placeholder="HP, Dell, Lenovo...">
+                        </div>
+
+                        <div class="campo">
+                            <label for="area-equipo">Área</label>
+                            <select id="area-equipo">
+                                <option value="">Seleccionar área</option>
+                                <option>Administración</option>
+                                <option>Contabilidad</option>
+                                <option>Secretaría</option>
+                                <option>Informática</option>
+                                <option>Laboratorio</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="fecha-equipo">Fecha de Ingreso</label>
+                            <input type="date" id="fecha-equipo">
+                        </div>
+
+                        <div class="campo">
+                            <label for="estado-equipo">Estado del equipo</label>
+                            <select id="estado-equipo">
+                                <option>Operativo</option>
+                                <option>Mantenimiento</option>
+                                <option>Obsoleto</option>
+                            </select>
+                        </div>
+
+                        <div class="acciones-formulario">
+                            <button type="reset">Limpiar formulario</button>
+                        </div>
+
+                    </form>
+
+                    <p class="nota-formulario">
+                        Formulario de ejemplo. Los datos ingresados no se guardan.
+                    </p>
+                </div>
+            </section>
+
+            <section class="pagina pagina-inventario">
+                <div class="titulo-seccion">
+                    <div>
+                        <h2>Inventario del instituto</h2>
+                        <p>Ubicación, fecha de ingreso y estado de los equipos</p>
+                    </div>
+                    <span class="periodo">Inventario 2026</span>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-encabezado">
+                        <div>
+                            <h3>Relación de equipos</h3>
+                            <p>Registro de muestra de las áreas del instituto</p>
+                        </div>
+                    </div>
+
+                    <div class="tabla-contenedor">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Equipo</th>
+                                    <th>Fecha de Ingreso</th>
+                                    <th>Ubicación</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>EQ001</td>
+                                    <td>Computadora Dell</td>
+                                    <td>12/03/2026</td>
+                                    <td>Administración</td>
+                                    <td><span class="estado verde">Operativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>EQ002</td>
+                                    <td>Laptop HP</td>
+                                    <td>15/04/2026</td>
+                                    <td>Contabilidad</td>
+                                    <td><span class="estado verde">Operativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>EQ003</td>
+                                    <td>Impresora Epson</td>
+                                    <td>20/05/2026</td>
+                                    <td>Secretaría</td>
+                                    <td><span class="estado amarillo">Mantenimiento</span></td>
+                                </tr>
+                                <tr>
+                                    <td>EQ004</td>
+                                    <td>Monitor Samsung</td>
+                                    <td>10/06/2026</td>
+                                    <td>Informática</td>
+                                    <td><span class="estado verde">Operativo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>EQ005</td>
+                                    <td>Computadora Lenovo</td>
+                                    <td>18/02/2020</td>
+                                    <td>Laboratorio</td>
+                                    <td><span class="estado morado">Obsoleto</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pagina pagina-reportes">
+                <div class="titulo-seccion">
+                    <div>
+                        <h2>Reporte de equipos</h2>
+                        <p>Resumen de equipos operativos, en mantenimiento y obsoletos</p>
+                    </div>
+                    <span class="periodo">Año 2026</span>
+                </div>
+
+                <div class="tarjetas">
+
+                    <article class="tarjeta tarjeta-total">
+                        <h3>Total de equipos</h3>
+                        <h3 class="numero">120</h3>
+                        <p>Equipos registrados</p>
+                    </article>
+
+                    <article class="tarjeta tarjeta-operativos">
+                        <h3>Operativos</h3>
+                        <h3 class="numero">95</h3>
+                        <p>79.17% del total</p>
+                    </article>
+
+                    <article class="tarjeta tarjeta-mantenimiento">
+                        <h3>Mantenimiento</h3>
+                        <h3 class="numero">15</h3>
+                        <p>12.50% del total</p>
+                    </article>
+
+                    <article class="tarjeta tarjeta-obsoletos">
+                        <h3>Equipos Obsoletos</h3>
+                        <h3 class="numero">10</h3>
+                        <p>8.33% del total</p>
+                    </article>
+
+                </div>
+
+                <div class="panel">
+                    <div class="panel-encabezado">
+                        <div>
+                            <h3>Distribución por estado</h3>
+                            <p>Datos utilizados para la demostración</p>
+                        </div>
+                    </div>
+
+                    <div class="resumen-item">
+                        <div class="resumen-texto">
+                            <span>Equipos operativos</span>
+                            <strong>95</strong>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-verde"></div>
+                        </div>
+                    </div>
+
+                    <div class="resumen-item">
+                        <div class="resumen-texto">
+                            <span>Equipos en mantenimiento</span>
+                            <strong>15</strong>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-amarilla"></div>
+                        </div>
+                    </div>
+
+                    <div class="resumen-item">
+                        <div class="resumen-texto">
+                            <span>Equipos obsoletos</span>
+                            <strong>10</strong>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-morada"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pagina pagina-usuarios">
+                <div class="titulo-seccion">
+                    <div>
+                        <h2>Usuarios del sistema</h2>
+                        <p>Personal relacionado con el control de equipos</p>
+                    </div>
+                    <span class="periodo">3 usuarios de ejemplo</span>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-encabezado">
+                        <div>
+                            <h3>Personal registrado</h3>
+                            <p>Usuarios y responsabilidades</p>
+                        </div>
+                    </div>
+
+                    <div class="tabla-contenedor">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Nombre</th>
+                                    <th>Rol</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>U001</td>
+                                    <td>Yonatan Chambi</td>
+                                    <td>Administrador</td>
+                                    <td><span class="estado verde">Activo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>U002</td>
+                                    <td>Personal de Informática</td>
+                                    <td>Técnico</td>
+                                    <td><span class="estado verde">Activo</span></td>
+                                </tr>
+                                <tr>
+                                    <td>U003</td>
+                                    <td>Personal Administrativo</td>
+                                    <td>Usuario</td>
+                                    <td><span class="estado verde">Activo</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-encabezado">
+                        <div>
+                            <h3>Responsabilidades del administrador</h3>
+                            <p>Tareas principales en el control del inventario</p>
+                        </div>
+                    </div>
+
+                    <div class="funciones">
+
+                        <div class="funcion">
+                            <strong>Control de equipos</strong>
+                            <p>Revisar los equipos que pertenecen al instituto y verificar su estado.</p>
+                        </div>
+
+                        <div class="funcion">
+                            <strong>Revisión de usuarios</strong>
+                            <p>Consultar qué personal está relacionado con el inventario.</p>
+                        </div>
+
+                        <div class="funcion">
+                            <strong>Consulta de reportes</strong>
+                            <p>Identificar equipos operativos, en mantenimiento y obsoletos.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="pagina pagina-configuracion">
+                <div class="titulo-seccion">
+                    <div>
+                        <h2>Datos del sistema</h2>
+                        <p>Información del proyecto y su responsable</p>
+                    </div>
+                    <span class="periodo">Versión 1.0</span>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-encabezado">
+                        <div>
+                            <h3>Información general</h3>
+                            <p>Datos del proyecto académico</p>
+                        </div>
+                    </div>
+
+                    <div class="datos">
+                        <div>
+                            <span>Nombre del proyecto</span>
+                            <strong>Inventario TI</strong>
+                        </div>
+                        <div>
+                            <span>Institución</span>
+                            <strong>IES Público Juli</strong>
+                        </div>
+                        <div>
+                            <span>Unidad didáctica</span>
+                            <strong>Fundamentos de Desarrollo Web</strong>
+                        </div>
+                        <div>
+                            <span>Desarrollador</span>
+                            <strong>Yonatan José Chambi Chucuya</strong>
+                        </div>
+                        <div>
+                            <span>Tecnologías utilizadas</span>
+                            <strong>HTML5, CSS3 y Flexbox</strong>
+                        </div>
+                        <div>
+                            <span>Año</span>
+                            <strong>2026</strong>
+                        </div>
+                        <div>
+                            <span>Versión</span>
+                            <strong>1.0</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer>
+            <p>© 2026 · Inventario TI · IES Público Juli</p>
+            <p>Desarrollado por: <strong>YONATAN JOSE CHAMBI CHUCUYA</strong></p>
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>
